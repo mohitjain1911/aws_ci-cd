@@ -11,12 +11,9 @@ phases:
       python: 3.11
   pre_build:
     commands:
-      - echo "Listing files..."
-      - ls Task_manager/
       - echo "Installing dependencies..."
-      - cd Task_manager/
       - python -m pip install --upgrade pip  
-      - pip install -r requirements.txt
+      - pip install -r Task_manager/requirements.txt
   build:
     commands:
       - echo "Running tests..."
